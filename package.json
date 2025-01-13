@@ -1,6 +1,6 @@
 {
   "name": "onaim-pixi-starter",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "index.js",
   "description": "A starter template for Pixi.js games with Vite",
   "publishConfig": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/your-repo-name.git"
+    "url": "https://github.com/TsotneDarjania/onaim-pixi-starter"
   },
   "type": "module",
   "scripts": {
