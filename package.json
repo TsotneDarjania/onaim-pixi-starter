@@ -1,0 +1,29 @@
+{
+  "name": "onaim-pixi-starter",
+  "version": "1.0.4",
+  "main": "index.js",
+  "description": "A starter template for Pixi.js games with Vite",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo-name.git"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-pixi-template": "./index.js"
+  },
+  "author": "Tsotne Darjania",
+  "keywords": ["pixi", "pixi.js", "vite", "game", "starter", "template"],
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.0",
+    "ora": "^8.1.1"
+  }
+
+}
