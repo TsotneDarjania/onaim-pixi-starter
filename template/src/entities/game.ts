@@ -1,19 +1,16 @@
+import { GamePlayScene } from "../scenes/gameplay";
+import gameConfig from "../config/gameConfig";
 import { Application } from "pixi.js";
-import { Scene } from "./scene";
-import { gameConfig } from "../config/gameConfig";
-import { PreloadScene } from "../scenes/preload";
-import { loadResources } from "./loadResources";
+import { gamePlayAssets } from "../config/loadConfig";
 
 export class Game extends Application {
-  preloadScene!: Scene;
+  gamePlayScene!: GamePlayScene;
 
   constructor() {
     super();
 
     this.setup()
       .then(() => {
-        document.getElementById("pixi-container")!.appendChild(this.canvas);
-        console.log("OnAim Pixi Game Starter 2025 Version 1.0");
         this.startGame();
       })
       .catch((err) => {
@@ -30,11 +27,10 @@ export class Game extends Application {
       autoDensity: true,
       roundPixels: true,
     });
-
-    await loadResources();
+    document.getElementById(gameConfig.htmlRootId)!.appendChild(this.canvas);
   }
 
   startGame() {
-    this.preloadScene = new PreloadScene(this);
+    this.gamePlayScene = new GamePlayScene(this, gamePlayAssets);
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "onaim-pixi-starter",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "description": "A starter template for Pixi.js games with Vite",
   "publishConfig": {
